@@ -8,11 +8,11 @@ import streamlit as st
 from keras.models import load_model
 from keras.preprocessing import image
 from tensorflow.keras.utils import img_to_array
+
 from frame_decorator import (
     create_circle_mask,
     draw_arrow,
     draw_circle_frame,
-    plot_emotions_circle,
 )
 
 # //---------------------Special Vars-----------------------------------
@@ -116,6 +116,7 @@ ctr = 0
 
 while run:
     _, frame1 = camera.read()
+
     frame = cv2.resize(frame1, (640, 480))
     frame = cv2.flip(frame, 1)
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
