@@ -194,15 +194,15 @@ while run:
     except Exception as e:
         print(e)
         FRAME_WINDOW.image(
-                cv2.putText(
-                    frame,
-                    label,
-                    label_position,
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    1,
-                    (0, 255, 0),
-                    2,
-                )
+            cv2.putText(
+                frame,
+                "",
+                (0, 0),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                1,
+                (0, 255, 0),
+                2,
             )
+        )
 
         continue
