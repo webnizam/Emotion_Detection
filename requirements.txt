@@ -2,8 +2,12 @@ streamlit
 numpy
 Keras
 opencv-python-headless
-tensorflow-mac
-tensorflow-metal
+
+tensorflow
+#uncomment below two lines and comment above 1 line if you're running on a mac.
+#tensorflow-mac
+#tensorflow-metal
+
 pandas
 numpy
 matplotlib
