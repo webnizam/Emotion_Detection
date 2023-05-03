@@ -140,7 +140,8 @@ webrtc_streamer(
     video_html_attrs=VideoHTMLAttributes(
         autoPlay=True, controls=True, style={"width": "100%"}, muted=True
     ),
-    rtc_configuration=RTCConfiguration(
-        {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
-    ),
+    rtc_configuration={ 
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+    }
+
 )
